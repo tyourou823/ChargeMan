@@ -1,11 +1,9 @@
 import asyncio
 import threading
 import psutil
-from switchbot import Switchbot
 from pystray import Icon, MenuItem as item, Menu
 from PIL import Image, ImageDraw
 import sys
-from bleak import BleakScanner
 from bleak import BleakClient
 
 DEVICE_MAC = "XX:XX:XX:XX:XX:XX"  # PlugのMACアドレス
@@ -84,3 +82,4 @@ def setup_tray():
 
 if __name__ == "__main__":
     setup_tray()
+
